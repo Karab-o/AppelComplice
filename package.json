@@ -1,0 +1,28 @@
+{
+  "name": "appelcomplice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karab-o/AppelComplice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Karab-o/AppelComplice/issues"
+  },
+  "homepage": "https://github.com/Karab-o/AppelComplice#readme",
+  "dependencies": {
+    "@react-native-firebase/messaging": "^23.3.1",
+    "@react-navigation/native": "^7.1.17",
+    "lottie-react-native": "^7.3.4",
+    "react-native-gesture-handler": "^2.28.0",
+    "react-native-maps": "^1.26.8",
+    "react-native-vector-icons": "^10.3.0"
+  }
+}
