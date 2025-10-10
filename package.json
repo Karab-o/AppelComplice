@@ -1,45 +1,42 @@
 {
-  "name": "appelcomplice",
+  "name": "trip-insights-dashboard",
   "version": "1.0.0",
-  "description": "Complice Safety App",
-  "main": "node_modules/expo/AppEntry.js",
+  "description": "Trip Insights Analytics Dashboard - Historical Data Analysis",
+  "main": "backend-server.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo run:android",
-    "ios": "expo run:ios",
-    "web": "expo start --web",
+    "start": "node backend-server.js",
+    "dev": "nodemon backend-server.js",
+    "serve": "http-server . -p 8080 -c-1",
+    "dev-full": "concurrently \"npm run dev\" \"npm run serve\"",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "taxi",
+    "analytics",
+    "dashboard",
+    "trip-insights",
+    "data-visualization"
+  ],
+  "author": "Trip Insights Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "http-server": "^14.1.1",
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Karab-o/AppelComplice.git"
+    "url": "https://github.com/trip-insights/dashboard.git"
   },
-  "keywords": [
-    "expo",
-    "react-native",
-    "firebase",
-    "safety-app"
-  ],
-  "author": "Karabo",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Karab-o/AppelComplice/issues"
+    "url": "https://github.com/trip-insights/dashboard/issues"
   },
-  "homepage": "https://github.com/Karab-o/AppelComplice#readme",
-  "dependencies": {
-    "@react-native-firebase/messaging": "^23.3.1",
-    "@react-navigation/native": "^7.1.17",
-    "expo": "^54.0.9",
-    "firebase": "^12.3.0",
-    "lottie-react-native": "^7.3.4",
-    "react-dom": "19.1.0",
-    "react-native-gesture-handler": "^2.28.0",
-    "react-native-maps": "^1.26.8",
-    "react-native-vector-icons": "^10.3.0",
-    "react-native-web": "^0.21.0"
-  },
-  "devDependencies": {
-    "@react-native-community/cli": "^20.0.2"
-  },
-  "private": true
+  "homepage": "https://github.com/trip-insights/dashboard#readme"
 }
